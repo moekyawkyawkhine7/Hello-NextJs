@@ -1,0 +1,11 @@
+.mainHeader{
+    font-style: bold;
+    font-size: 30px;
+    text-decoration: dotted;
+    span {
+        color: green;
+        &:hover{
+            color: red;
+        }
+    }
+}

@@ -1,15 +1,17 @@
 import React from 'react'
 import { GetStaticProps, GetStaticPaths } from 'next'
 import { useRouter } from 'next/router'
+// scss
+import Styles from './blog.module.scss';
 
 const BlogDetail = ({
     blogDetail
 }) => {
     let router= useRouter();
-    
+
     return (
         <div>
-            <button onClick={() => router.back()}>Back</button>
+            <button className={Styles.back} onClick={() => router.back()}>Back</button>
             <h1>{blogDetail?.title}</h1>
             <p>{blogDetail?.body}</p>
         </div>
